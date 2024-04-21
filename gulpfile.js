@@ -11,3 +11,5 @@ const { images } = require('./tools/gulp/processors/images.js')
 exports.default = function() {
     watch('source/*.*', parallel(images))
 }
+
+exports.run = parallel(images)
